@@ -11,8 +11,10 @@
 }
 
 body{
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1.6rem;
     font-family: "DM Sans",sans-serif;
     background: linear-gradient(45deg, #190361 0%, #B0F 100%);
@@ -21,15 +23,18 @@ body{
 
 h1{
     font-family: "Montserrat",sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
 }
 main{
     
     background-color: #ffffff;
     border-radius: .5rem;
+    
     box-shadow: 0 2.0rem 5.0rem 0 rgba(0, 0, 0, 0.80);
     color: var(--title-color);
     padding: 4.8rem 6.4rem 6.4rem;
-    width: min(48.8rem, 90%);
+    width: min(40rem, 90vw);
    
     
 }
@@ -40,6 +45,10 @@ main{
 .screen1 button{
     border: none;
     background-color: #fff;
+    width: 100%;
+}
+.screen1 img{
+    width: 100%;
 }
 .screen1 p{
     color: var(--title-color);
@@ -56,6 +65,9 @@ main{
     text-align: center;
     
     
+}
+.screen2 img{
+    width: 100%;
 }
 .screen2 p{
     
@@ -86,6 +98,7 @@ main{
 }
 
 /*Animações*/
+
 .screen1 img:hover{
     animation-name:scale, trembling, translatexScreen1;
     animation-duration: .7s, .8s, .1s;
